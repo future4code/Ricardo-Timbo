@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles-home.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>DevOff - programando em casa</title>
 </head>
 <body>
-
-    <nav>
-    <a href="estoque.html">Estoque</a> |
-    <a href="produto.html">Adicionar Produto</a> |
-    <a href="funcionarios.html">Funcionarios</a> 
-
-    </nav>
-
-    <h1>Nome da empresa</h1>
-
-    <p>Seja bem vindo ao sistema da empresa:</p>
-
+    <div class="home">
+        <div class="esquerdo">
+            <div id="logo">
+                <img src="imagens/logo-preta.jpg" alt="logo da empresa">
+            </div>    
+        </div>
+        <div class="direito">
+            <header class="menu-principal">
+                <div class="header-1">
+                    <ul>
+                        <li><a href="estoque.html" >Estoque</a></li> 
+                        <li><a href="produto.html" >Adicionar Produto</a></li> 
+                        <li><a href="funcionarios.html" >Funcionarios</a></li> 
+                    </ul>
+                </div>
+            </header>
+            <div class="welcome">
+                <div id="welcome">
+                    <h1>Bem vindo!</h1>
+                    <p>Este é o sistema de estoque da DevOff</p>
+                </div>
+            </div>
+            <div class="suporte">
+                <p>caso precise de ajuda, envie um email para <a href="suporte@devoff.com" id="suporte">Suporte</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

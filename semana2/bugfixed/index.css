@@ -79,8 +79,10 @@ div img {
 }
 #container-de-descricao>p {
     display: block;
+    width: 180px;
     position: relative;
     top: 30%;
+    left: 45%;
 }
 #container-de-descricao>ol {
     padding: 15px 0px;

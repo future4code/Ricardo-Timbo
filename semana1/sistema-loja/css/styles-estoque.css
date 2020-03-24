@@ -1,0 +1,50 @@
+* {
+    margin: 0px
+}
+.pricipal {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #1e1e1e;
+}
+.menu-fixo {
+    display: inline-flex;
+    background-color: #72da78;
+    width: 100%;
+    height: 100px;
+}
+.logo {
+    width: 80%;
+    height: 100%;
+    color: #1e1e1e;
+    float: left;
+}
+.pagina-inicial {
+    width: 20%;
+    height: 100%;
+}
+.corpo {
+    background-color: #7a7272;
+}
+.titulo {
+    color: #72da78;
+}
+.tbbd {
+    width: 70%;
+    height: 100%;
+    background-color: #72da78;
+    border: #72da78;
+    border: 5px;
+    border-radius: 10px;
+}
+.tbbd  tr, th, td {
+    color: #72da78;
+    background-color: #1e1e1e;
+    border: 5px;
+    border-color: #2d6330;
+}
+.versao {
+    height: 70px;
+    width: 100%;
+    background-color: whitesmoke;
+}

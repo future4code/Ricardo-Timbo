@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+}
+div {
+    margin: 0px;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.home{
+    position: relative;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+}
+.esquerdo {
+    padding: 68px 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #1e1e1e;   
+}
+#logo {
+    padding: 278px 200px;
+}
+.direito {
+    position: relative;
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #72da78;
+    display: inline-block;
+}
+.menu-principal {
+    height: 100px;
+    margin: 0 auto;
+}
+.header-1 ul li {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 67px;
+    font-size: 25px;
+    color: black;
+}
+.welcome {
+    display: block;
+    margin: 200px 300px;
+    font-family: 'Oswald', sans-serif;
+    align-self: center;
+}
+.welcome h1 {
+    font-size: 50px;
+}
+.welcome  p {
+    font-size: 18px;  
+}
+.welcome h1, p {
+    padding: 5px 30px;
+    display: block;
+    align-items: center;
+}
+.suporte {
+    padding: 300px 0px 20px 40px;
+    font-style: italic;
+}
+#suporte {
+    color: orangered;
+    font-size: 15px;
+}
+

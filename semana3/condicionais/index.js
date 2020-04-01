@@ -87,20 +87,68 @@
 
 
 //b.
-const numero1 = Number (prompt("Digite o primeiro número."))
-const numero2 = Number (prompt("Digite o segundo número"))
-const numero3 = Number (prompt("Digite o terceiro número"))
+// const numero1 = Number (prompt("Digite o primeiro número."))
+// const numero2 = Number (prompt("Digite o segundo número"))
+// const numero3 = Number (prompt("Digite o terceiro número"))
 
-if (numero1>numero2 && numero2>numero3 && numero1>numero3){
-    console.log(numero1, numero2, numero3)
-}else if(numero1>numero2 && numero3>numero2 && numero1>numero3){
-    console.log(numero1,numero3, numero2)
-}else if(numero2>numero1 && numero1>numero3 && numero2>numero3){
-    console.log(numero2,numero1, numero3)
-}else if(numero2>numero1 && numero1<numero3 && numero2>numero3){
-    console.log(numero2, numero3,numero1)
-}else if (numero3>numero1 && numero1>numero2 && numero3>numero2){
-    console.log(numero3, numero1, numero2)
-}else if(numero3>numero2 && numero2>numero1 && numero3>numero1){
-    console.log(numero3,numero2,numero1)
+// if (numero1>numero2 && numero2>numero3 && numero1>numero3){
+//     console.log(numero1, numero2, numero3)
+// }else if(numero1>numero2 && numero3>numero2 && numero1>numero3){
+//     console.log(numero1,numero3, numero2)
+// }else if(numero2>numero1 && numero1>numero3 && numero2>numero3){
+//     console.log(numero2,numero1, numero3)
+// }else if(numero2>numero1 && numero1<numero3 && numero2>numero3){
+//     console.log(numero2, numero3,numero1)
+// }else if (numero3>numero1 && numero1>numero2 && numero3>numero2){
+//     console.log(numero3, numero1, numero2)
+// }else if(numero3>numero2 && numero2>numero1 && numero3>numero1){
+//     console.log(numero3,numero2,numero1)
+// }
+// /*else{
+//     console.log("Erro há numeros repetidos!")
+// }*/
+// não imprimiu nada pois nenhuma das condições foram atendidas 
+// colocarei um else informando que há numeros repetidos como erro 
+
+// c.
+// else if(numero1 === numero2 || numero1 === numero3 || numero2 === numero3){
+//     console.log("Há numeros repetidos atualize a pagina!")
+// }
+
+
+// -------------------------------Link do Diagrama ---------------------------------------------------
+//https://drive.google.com/file/d/1IR0DKK-tqQeFKhO0mEuWOdTFQU3jGJ8A/view?usp=sharing
+//-----------------------------------------------------------------------------------------------------
+
+
+let animal = prompt("O animal possui ossos? [s/n]")
+if (animal === "s"){
+    animal = prompt("O animal possui pelo? [s/n]")
+    if(animal === "s" ){
+        animal = prompt("O animal é racional? [s/n]")
+        if(animal === "s" ){
+            console.log("O animal é um ser humano!") 
+        }else if (animal === "n" ){
+            console.log("O animal é um Mamífero não humano!")
+        }    
+    }else if(animal === "n") {
+        animal = prompt("O animal possui pena? [s/n]")
+        if(animal === "s" ){
+            console.log("O animal é uma ave")
+        }else if(animal === "n"){
+            animal = prompt("O animal é terrestre? [s/n]")
+            if(animal === "s" ){
+                animal = prompt("Passa uma parte da vida em ambiente aquático? [s/n]")
+                if(animal === "s" ){
+                    console.log("O animal é um anfibio!")                            
+                }else if(animal === "n"){
+                    console.log("O animal é um reptil")
+                }
+            }else if(animal === "n"){
+                console.log("O animal é um peixe")
+            }
+        }
+    }
+}else {
+    console.log("O animal é um invertebrado!")
 }

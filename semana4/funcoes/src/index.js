@@ -77,9 +77,34 @@
 // console.log(calculaIdadeCao (4))
 
 //b.
-const pessoa  = (nome, idade, endereco, estudante) => {
-  const pessoaId = "Eu sou "+ nome + ", tenho " + idade + " anos, moro em " + endereco + " e "+ estudante + " estudante"
-  return pessoaId
-}
+// const pessoa  = (nome, idade, endereco, estudante) => {
+//   const pessoaId = "Eu sou "+ nome + ", tenho " + idade + " anos, moro em " + endereco + " e "+ estudante + " estudante"
+//   return pessoaId
+// }
 
-console.log(pessoa ("Goli", 23, "Rua Guararapi 190", true))
+// console.log(pessoa ("Goli", 23, "Rua Guararapi 190", true))
+
+// ---------------------------------------------- 5 ----------------------------------------------------//
+  const anoParaSeculo = (ano) =>{
+    let seculo = parseInt(ano /100)
+    let letras = ["M",  "CM",  "D",  "CD", "C",  "XC", "L",  "XL",  "X",  "IX", "V",  "IV", "I"]
+    let numeros = [1000,  900,  500,  400,  100,   90,  50,   40,   10,    9,    5,    4,    1]
+    let convertido=""
+    let i=0
+    while(seculo > 0){
+        if(seculo>=numeros[i]){
+            convertido+=letras[i]
+            seculo-=numeros[i]
+        }
+        else{
+            i++
+        }
+    }
+    return ("O ano "+ ano + " pertence ao século " + convertido )
+  }
+
+console.log(anoParaSeculo(1965))
+
+
+
+

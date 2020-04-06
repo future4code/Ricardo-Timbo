@@ -19,25 +19,24 @@ const carta4 = comprarCarta();
 const pontoUsuario = Number (carta.valor + carta3.valor)
 const pontoComputador = Number(carta2.valor + carta4.valor)
 
-if(confirm("Quer iniciar uma nova rodada?")) {
-
-  console.log("Usuário - cartas: " + carta.texto + " " + carta3.texto + " - pontuação " + pontoUsuario)
-  console.log("Computador - cartas: " + carta2.texto + " " + carta4.texto + " - pontuação " + pontoComputador)
-  if(pontoUsuario > pontoComputador && pontoUsuario <=21){
-    console.log("O usuário ganhou!")
-  }else if(pontoComputador > pontoUsuario && pontoComputador <=21){
-    console.log("O computador ganhou!")
-  }else if (pontoUsuario === pontoComputador){
-    console.log("Empate!")
-  }else if (pontoUsuario > pontoComputador && pontoUsuario > 21){
-    console.log("O computador ganhou!")
-  }else if (ontoComputador > pontoUsuario && pontoComputador > 21){
-    console.log("O usuário ganhou!")
-  }else {
-    console.log("Empate!")
+while(confirm){
+  if(confirm("Quer iniciar uma nova rodada?")) {
+    console.log("Usuário - cartas: " + carta.texto + " " + carta3.texto + " - pontuação " + pontoUsuario)
+    console.log("Computador - cartas: " + carta2.texto + " " + carta4.texto + " - pontuação " + pontoComputador)
+    if(pontoUsuario > pontoComputador && pontoUsuario <=21){
+      console.log("O usuário ganhou!")
+    }else if(pontoComputador > pontoUsuario && pontoComputador <=21){
+      console.log("O computador ganhou!")
+    }else if (pontoUsuario === pontoComputador){
+      console.log("Empate!")
+    }else if (pontoUsuario > pontoComputador && pontoUsuario > 21){
+      console.log("O computador ganhou!")
+    }else if (ontoComputador > pontoUsuario && pontoComputador > 21){
+      console.log("O usuário ganhou!")
+    }else {
+      console.log("Empate!")
   }
-
-
 } else {
 	console.log("O jogo acabou")
+}
 }

@@ -85,26 +85,55 @@
 // console.log(pessoa ("Goli", 23, "Rua Guararapi 190", true))
 
 // ---------------------------------------------- 5 ----------------------------------------------------//
-  const anoParaSeculo = (ano) =>{
-    let seculo = parseInt(ano /100)
-    let letras = ["M",  "CM",  "D",  "CD", "C",  "XC", "L",  "XL",  "X",  "IX", "V",  "IV", "I"]
-    let numeros = [1000,  900,  500,  400,  100,   90,  50,   40,   10,    9,    5,    4,    1]
-    let convertido=""
-    let i=0
-    while(seculo > 0){
-        if(seculo>=numeros[i]){
-            convertido+=letras[i]
-            seculo-=numeros[i]
-        }
-        else{
-            i++
-        }
-    }
-    return ("O ano "+ ano + " pertence ao século " + convertido )
-  }
+//   const anoParaSeculo = (ano) =>{
+//     let seculo = parseInt(ano /100)
+//     let letras = ["M",  "CM",  "D",  "CD", "C",  "XC", "L",  "XL",  "X",  "IX", "V",  "IV", "I"]
+//     let numeros = [1000,  900,  500,  400,  100,   90,  50,   40,   10,    9,    5,    4,    1]
+//     let convertido=""
+//     let i=0
+//     while(seculo > 0){
+//         if(seculo>=numeros[i]){
+//             convertido+=letras[i]
+//             seculo-=numeros[i]
+//         }
+//         else{
+//             i++
+//         }
+//     }
+//     return ("O ano "+ ano + " pertence ao século " + convertido )
+//   }
 
-console.log(anoParaSeculo(1965))
-
-
+// console.log(anoParaSeculo(1965))
 
 
+//-------------------------------------------------- 6 -------------------------------------------------//
+ const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+//a.
+ // const minhaFuncao = (array) => {
+//   return array.length
+// }
+// console.log(minhaFuncao(array))
+
+//b.
+// const numeroPar = (numero) => {
+//   if(numero % 2 === 0){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
+
+// console.log(numeroPar(9))
+
+//c. 
+// const arrayPar = (array) => {
+//   let novoArrayPar = []
+
+//   for(let x of array) {
+//     if(x % 2 === 0){
+//       return novoArrayPar.push
+//     }
+//   }
+//   return novoArrayPar
+// }
+// console.log(arrayPar())

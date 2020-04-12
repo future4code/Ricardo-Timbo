@@ -44,9 +44,57 @@
 // const trianguloTipo = (a, b, c) => {
 //   if(a === b && b === c){
 //     return "Equilátero"
-//   }else if ((a === b && a !== c) || (b === c && a !== b)){
+//   }else if ((a === b && a !== c) || (a === c && a !== b) || (b === c && c !== a)){
 //     return "Isósceles"
 //   }else {
 //     return "Escaleno"
 //   }
 // }
+
+//4
+// const doisNumeros = (a, b) => {
+//   resultado = ( a - b )
+
+
+//   if (a > b && a % b === 0 && a - b >= 0 ){
+//     console.log("O maior numero é " + a ) 
+//     console.log(a +" é divisível por "+ b)
+//     console.log("A diferença entre eles é " + resultado)
+//   }
+//   else if (a > b && a % b === 0 && a - b < 0 ){
+//     console.log("O maior numero é " + a ) 
+//     console.log(a +" é divisível por "+ b)
+//     console.log("A diferença entre eles é " + (resultado * -1))
+//   }
+//   else if (a > b && a % b !== 0 && a - b >= 0 ){
+//     console.log("O maior numero é " + a ) 
+//     console.log(a +" não é divisível por "+ b)
+//     console.log("A diferença entre eles é " + resultado)
+//   }
+//   else if (a > b && a % b !== 0 && a - b < 0 ){
+//     console.log("O maior numero é " + a ) 
+//     console.log(a +" não é divisível por "+ b)
+//     console.log("A diferença entre eles é " + (resultado * -1))
+//   }
+//   else if (a < b && a % b === 0 && a - b >= 0 ){
+//     console.log("O maior numero é " + b ) 
+//     console.log(a +" é divisível por "+ b)
+//     console.log("A diferença entre eles é " + resultado)
+//   }
+//   else if (a < b && a % b === 0 && a - b < 0 ){
+//     console.log("O maior numero é " + b ) 
+//     console.log(a +" é divisível por "+ b)
+//     console.log("A diferença entre eles é " + (resultado * -1))
+//   }
+//   else if (a < b && a % b !== 0 && a - b >= 0 ){
+//     console.log("O maior numero é " + b ) 
+//     console.log(a +" não é divisível por "+ b)
+//     console.log("A diferença entre eles é " + resultado)
+//   }
+//   else if (a < b && a % b !== 0 && a - b < 0 ){
+//     console.log("O maior numero é " + b ) 
+//     console.log(a +" não é divisível por "+ b)
+//     console.log("A diferença entre eles é " + (resultado * -1))
+//   }
+
+//----------------------------- 

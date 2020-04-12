@@ -126,8 +126,9 @@
 
 // ----------------------------- exercicio de objetos -----------------------------------------------//
 
-//1 Array quando precisamos de um uma variavel normalmente de um unico tipo para ajudar a busca e manutenção do array
-//Objeto guarda mais de um tipo de variavel que é a base do paradigma de Orientação de Objeto que mostrara ser essencial
+//1 Array quando precisamos de um uma variavel normalmente de um unico tipo para ajudar a busca e manutenção do array. array é ordenado(a possibilidade de um array de objeto)
+//Objeto guarda mais de um tipo de variavel que é a base do paradigma de Orientação de Objeto que mostrara ser essencial. tem lista mas não ordenado (uma das caracteristicas do o objeto pode ser um array)
+// a forma de acessalos é muito diferente o array é por indice o array por propiedade
 
 //2 
 // const criaRetangulo = (lado1, lado2) => {
@@ -141,3 +142,13 @@
 
 //   return retangulo
 // }
+
+//3
+const filme = {
+  titulo: "Parasita",
+  ano: 2019,
+  diretor: "Bong Joon-ho",
+  elenco: ["Cho Yeo-jeong","Choi Woo-shik","Jung Hyun-joon"]
+}
+
+console.log("Venha assistir ao filme " + filme.titulo +", de "+ filme.ano +", dirigido por "+ filme.diretor +" e estrelado por " + filme.elenco[0] +", "+filme.elenco[1] + ", " +filme.elenco[2])

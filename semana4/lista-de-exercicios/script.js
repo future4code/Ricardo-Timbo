@@ -20,9 +20,14 @@
 //(-10)
 //(1590)
 
-//                                    exercicio de programacao 
+//                                    exercicio de logica de programacao 
 
+//1
 //a. false
 //b. true
-//c.
+//c. true
+//d. true
+//e. true
+
+//
 

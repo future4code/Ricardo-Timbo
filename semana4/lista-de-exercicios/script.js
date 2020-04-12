@@ -30,9 +30,23 @@
 //e. true
 
 //2 
-const quantidadeDeNumerosPares
-let i = 0
-while(i <= quantidadeDeNumerosPares) {
-  console.log(i*2)
-}
+// é necessario uma função para colocar um valor a variavel e um incremento ao indice i para não atingir a condição do while
+// function quantidadeDeNumerosPares(numero) {
+// let i = 0
+// while(i <= numero) {
+//   console.log(i*2)
 
+//   i++
+// }
+// }
+
+//3 
+// const trianguloTipo = (a, b, c) => {
+//   if(a === b && b === c){
+//     return "Equilátero"
+//   }else if ((a === b && a !== c) || (b === c && a !== b)){
+//     return "Isósceles"
+//   }else {
+//     return "Escaleno"
+//   }
+// }

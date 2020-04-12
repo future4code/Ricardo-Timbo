@@ -100,7 +100,23 @@
 //----------------------------- exercicios de funcao -------------------------------------------//
 
 //1 
+// const segundoMaiorSegundoMenor = (array) =>{
+//   let maior = 0 
+//   let menor = Infinity
+//   let segundoMaior = menor
+//   let segundoMenor = menor
 
+//   for(let numero of array){
+//     if(numero > maior ){
+//       maior = numero;
+//     }
+//     if(numero < menor){
+//       menor = numero
+//     }
+//   }
+//   console.log(maior)
+//   console.log(menor)
+// }
 
 
 //2

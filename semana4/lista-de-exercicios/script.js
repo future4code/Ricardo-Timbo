@@ -1,3 +1,6 @@
+
+//-------------------------------------------exercicios aula14--------------------------------------------------------------------------------
+
 1// temos uma função que recebe um valor numerico de dinheiro e de cotação 
 //para poder converter um valor em dolares 
 
@@ -11,4 +14,15 @@
 // (Quantidade total de números 14)
 //(6)
 //(8)
+
+4// temos um array e 2 variaveis, e um for com 2 if no primeiro if o valor da variavel numero1 será substituida pelo proximo valor mais baixo 
+// a variavel numero2 vai substituir quando o valor proximo for mal alto 
+//(-10)
+//(1590)
+
+//                                    exercicio de programacao 
+
+//a. false
+//b. true
+//c.
 

@@ -29,5 +29,10 @@
 //d. true
 //e. true
 
-//
+//2 
+const quantidadeDeNumerosPares
+let i = 0
+while(i <= quantidadeDeNumerosPares) {
+  console.log(i*2)
+}
 

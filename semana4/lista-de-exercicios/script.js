@@ -130,3 +130,14 @@
 //Objeto guarda mais de um tipo de variavel que é a base do paradigma de Orientação de Objeto que mostrara ser essencial
 
 //2 
+// const criaRetangulo = (lado1, lado2) => {
+
+//   const retangulo = {
+//     largura: lado1,
+//     altura: lado2,
+//     perimetro: 2 * (lado1 + lado2),
+//     area: (lado1 * lado2)
+//   }
+
+//   return retangulo
+// }

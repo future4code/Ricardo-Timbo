@@ -123,3 +123,10 @@
 // let olaFuture = function (){
 //   return alert("Hello Future4")
 // }
+
+// ----------------------------- exercicio de objetos -----------------------------------------------//
+
+//1 Array quando precisamos de um uma variavel normalmente de um unico tipo para ajudar a busca e manutenção do array
+//Objeto guarda mais de um tipo de variavel que é a base do paradigma de Orientação de Objeto que mostrara ser essencial
+
+//2 

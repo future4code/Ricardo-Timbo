@@ -97,4 +97,13 @@
 //     console.log("A diferença entre eles é " + (resultado * -1))
 //   }
 
-//----------------------------- 
+//----------------------------- exercicios de funcao -------------------------------------------//
+
+//1 
+
+
+
+//2
+// let olaFuture = function (){
+//   return alert("Hello Future4")
+// }

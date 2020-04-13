@@ -176,3 +176,12 @@
 // }
 
 //--------------------------------------- Função de Array ------------------------------------------------------------// 
+
+//1
+// com um for of criando uma variavel , com um indice perccorendo o array sendo incrementado e com um while
+
+//2
+//a. utilizar o filter para as idades
+//b.
+
+//3 

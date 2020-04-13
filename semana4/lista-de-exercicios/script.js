@@ -144,11 +144,35 @@
 // }
 
 //3
-const filme = {
-  titulo: "Parasita",
-  ano: 2019,
-  diretor: "Bong Joon-ho",
-  elenco: ["Cho Yeo-jeong","Choi Woo-shik","Jung Hyun-joon"]
-}
+// const filme = {
+//   titulo: "Parasita",
+//   ano: 2019,
+//   diretor: "Bong Joon-ho",
+//   elenco: ["Cho Yeo-jeong","Choi Woo-shik","Jung Hyun-joon"]
+// }
 
-console.log("Venha assistir ao filme " + filme.titulo +", de "+ filme.ano +", dirigido por "+ filme.diretor +" e estrelado por " + filme.elenco[0] +", "+filme.elenco[1] + ", " +filme.elenco[2])
+// console.log("Venha assistir ao filme " + filme.titulo +", de "+ filme.ano +", dirigido por "+ filme.diretor +" e estrelado por " + filme.elenco[0] +", "+filme.elenco[1] + ", " +filme.elenco[2])
+
+//4 
+// const pessoa = {
+//   nome: "",
+//   idade: 0,
+//   email: "",
+//   endereco: ""
+// }
+
+// function anonimizarPessoa (nome, idade, email, endereco) {
+  
+//   const pessoa = {
+//     nome: nome,
+//     idade: idade,
+//     email: email,
+//     endereco: endereco
+//   }
+
+//   pessoa.nome = "ANÔNIMO"
+//   console.log(pessoa)
+  
+// }
+
+//--------------------------------------- Função de Array ------------------------------------------------------------// 

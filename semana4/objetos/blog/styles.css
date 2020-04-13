@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+}
+main {
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+}
+#formulario-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    border: 1px solid black;
+    height: 90vh;
+    width: 30vw;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+#corpo-post {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90vh;
+    width: 69vw;
+    border: black 1px  solid;
+}

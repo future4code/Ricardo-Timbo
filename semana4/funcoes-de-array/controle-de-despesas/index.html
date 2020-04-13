@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="cadastro-despesas">
+        <h1>Controle de despesas</h1>
+        <br>
+        <h2>Cadastro de despesa</h2>
+        <label >Valor</label>
+        <input id="valor" type="text">
+        <br>
+        <label >Tipo</label>
+        <select name="tipo-despesas" id="tipo-despesas">
+            <option value="casa">Casa</option>
+            <option value="viagem">Viagem</option>
+            <option value="roles">Rolês</option>
+            <option value="outros">Outros</option>
+        </select>
+        <br>
+        <label>Descrisão</label>
+        <input  id="email" type="text">
+        <br>
+        <button onclick="">Cadastrar Despesas</button>
+    </div>
+    
+    <div id="despesas-detalhadas">
+        <h2>Despesa Detalhadas</h2>
+        <br>
+        <Label>Tipo</Label>
+        <select name="tipo-despesas" id="tipo-despesas-detalhada">
+            <option value="casa">Casa</option>
+            <option value="viagem">Viagem</option>
+            <option value="roles">Rolês</option>
+            <option value="outros">Outros</option>
+        </select>
+        <br>
+        <label >Valor Mínimo</label>
+        <input type="text" id="valor-minimo">
+        <label>Valor Máximo</label>
+        <input type="text" id="valor-maximo">
+        <br>
+        <button>Filtrar</button>
+        <button>Limpar Filtros</button>
+    </div>
+
+    <div id="extrato">
+
+    </div>
+</body>
+</html>

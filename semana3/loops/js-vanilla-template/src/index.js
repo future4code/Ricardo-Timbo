@@ -79,13 +79,22 @@
 
 //----------------------- DESAFIOS ------------------------------//
 
-const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
-let quantidadeAtual = 0
-while(quantidadeAtual < quantidadeTotal){
-  let linha = ""
-  for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
-    linha += "0"
-  }
-  console.log(linha)
-  quantidadeAtual++
-}
+// const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
+// let quantidadeAtual = 0
+// while(quantidadeAtual < quantidadeTotal){
+//   let linha = ""
+//   for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
+//     linha += "0"
+//   }
+//   console.log(linha)
+//   quantidadeAtual++
+// }
+//enquanto a quantidadeAtual for menor que quantidadeTotal
+//vai rodar o while, dentro do while tem um for que acrescenta asteriscos
+//que incrementa um 0 nem linha que imprime a linha no final do programa
+//e incrementa a quantidadeAtual
+//cada ciclo do programa imprime um 0 ao fim a linha tem 4 "0000"
+
+//--------------------DESAFIO2-------------------------------------------------//
+
+

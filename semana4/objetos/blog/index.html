@@ -16,17 +16,17 @@
     <main>
         <div id="formulario-post">
             <form action="">
-                <label for="titulo">Titúlo</label>
+                <label>Titúlo</label>
+                <input type="text" id="titulo">
+                <label>Autor</label>
+                <input type="text" id="autor">
+                <label>Conteudo</label>
+                <textarea  id="conteudo" rows="10"></textarea>
+                <button onclick="criarPost()">ENVIAR</button>
 
-                <input type="text" id="titulo"  onkeydown="">
-                <label for="autor">Autor</label>
-                <input type="text" id="autor"  onkeydown="">
-                <label for="conteudo">Conteudo</label>
-                <textarea name="conteudo" id="conteudo" cols="30" rows="10"  onkeydown=""></textarea>
-                <button onclick=" (event)">ENVIAR</button>
             </form>
         </div>
-        <div id="corpo-post">
+        <div id="espaco-posts">
 
         </div>
     </main>

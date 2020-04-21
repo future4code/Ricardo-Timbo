@@ -9,6 +9,9 @@ header {
     height: 10vh;
     width: 100vw;
 }
+input, textarea {
+    display: block;
+}
 main {
     display: flex;
     height: 70vh;
@@ -19,8 +22,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*align-items: center;*/
-    border: 1px solid black;
     height: 90vh;
     width: 30vw;
 }
@@ -29,10 +30,9 @@ form{
     flex-direction: column;
     margin: 15px;
 }
-#corpo-post {
+#espaco-posts {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 90vh;
     width: 69vw;
-    border: black 1px  solid;
 }

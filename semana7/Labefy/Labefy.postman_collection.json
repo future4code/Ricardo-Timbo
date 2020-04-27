@@ -77,7 +77,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "ricardo-timbo-julian"
 					}
 				],
 				"url": {
@@ -97,7 +97,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "027f1eaf-3d07-46cf-aab3-7064d5935d80"
+							"value": "8ff4247e-274d-459c-9d3a-fe2605509043"
 						}
 					]
 				},
@@ -115,15 +115,17 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Ricardo-Timbo-Julian",
+						"value": "ricardo-timbo-julian",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"começando o dia\"\n}",
+					"raw": "{\n\t\"name\": \"Musicas para dormir\"\n}",
 					"options": {
-						"raw": {}
+						"raw": {
+							"language": "json"
+						}
 					}
 				},
 				"url": {
@@ -194,14 +196,16 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "ricardo-timbo-julian"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"string\",\n\t\"artist\": \"string\",\n\t\"url\": \"string\"\n}",
+					"raw": "{\n\t\"name\": \"Liberdade Provisória\",\n\t\"artist\": \"Henrique e Juliano\",\n\t\"url\": \"https://open.spotify.com/track/1vG3YuKRYqPwTmNmYgqkpg?si=W7erVyFOSz2fAqX4Uq1MGg\"\n}",
 					"options": {
-						"raw": {}
+						"raw": {
+							"language": "json"
+						}
 					}
 				},
 				"url": {
@@ -221,7 +225,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "027f1eaf-3d07-46cf-aab3-7064d5935d80"
+							"value": "e24d8571-44a3-4dcb-8e7d-06db2644fd1c"
 						}
 					]
 				},
@@ -237,7 +241,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "ricardo-timbo-julian"
 					}
 				],
 				"url": {
@@ -256,7 +260,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "247e3159-ac9f-491e-8eac-3ee4027681d8"
+							"value": "cfda4b2c-c3bc-45cd-bf21-36bb3b526bf8"
 						}
 					]
 				},
@@ -272,7 +276,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "ricardo-timbo-julian"
 					}
 				],
 				"url": {
@@ -293,11 +297,11 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": ""
+							"value": "643ef64a-dff3-48e3-983c-28920e983f2a"
 						},
 						{
 							"key": "trackId",
-							"value": ""
+							"value": "18076b53-19b4-4e65-ab70-82338bced4e2"
 						}
 					]
 				},

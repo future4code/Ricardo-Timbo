@@ -1,85 +1,33 @@
 import React from 'react';
-import axios from 'axios';
+import Home from './components/Home';
+import ListaDeUsuarios from './components/ListaDeUsuarios';
 
 
 class App extends React.Component {
 
   state = {
-    usuarios: [],
-    novoNomeValor: "",
-    novoEmailValor: ""
+    currentPage: "FORM",
   }
 
-  componentDidMount() {
-    this.pegarUsuarios()
-  }
+  onClickMudaDePagina = () => {
+    const nextPage = this.state.currentPage === "FORM" ? "LIST" : "FORM";
 
-  pegarUsuarios = () =>{ 
-    axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",  {
-      headers: {
-        Authorization: "ricardo-timbo-julian"
-      }
-    })
-    .then((resposta) => {
-      console.log(resposta)
-      this.setState({usuarios: resposta.data})
-    }).catch((error) => {
-      console.log(error)
-    })
-  }
-
-  onChangeNomeUsuario = (event) => {
-    this.setState({novoNomeValor: event.target.value})
-  }
-
-  onChangeEmailUsuario = (event) => {
-    this.setState({novoEmailValor: event.target.value})
-  }
-
-  onCreateUsuario = () => {
-    this.criarUsuario(this.state.novoNomeValor, this.state.novoEmailValor)
-  }
-
-  criarUsuario = (nomeUsuario,  emailUsuario) => {
-    const body = {
-      name: nomeUsuario,
-      email: emailUsuario
-    }
-  
-    axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users", body, {
-      headers: {
-        Authorization: "ricardo-timbo-julian"
-      }
-    })
-    .then((resposta) => {
-      this.pegarUsuarios()
-    }).catch((error) => {
-      console.log("Erro!!")
-    })
-  }
+    this.setState({currentPage: nextPage})
+  };
 
   render(){
     return(
     <div>
-      <button>Ir para a lista de Cadastros</button>
-      <div>
-        <h2>Cadastro de Usuario</h2>
-        <label>Nome:</label>
-        <input value={this.state.novoNomeValor} 
-          onChange={this.onChangeNomeUsuario}
-        />
-        <label>Email:</label>
-        <input value={this.state.novoEmailValor}
-          onChange={this.onChangeEmailUsuario}
-        />
-        <button onClick={this.onCreateUsuario} >Cadastrar</button>
-      </div>
-      <div>
-      <h1>Clientes Cadastrados</h1>
-      {this.state.usuarios.map((usuario) =>{
-        return <p>{usuario.name}</p>
-      })}
-      </div>
+      <button onClick={this.onClickMudaDePagina} >
+        {this.state.currentPage === "FORM"
+            ? "Ir para lista"
+            : "Voltar para cadastro"}
+      </button>
+      {this.state.currentPage === "FORM" ? (
+          <Home />
+        ) : (
+          <ListaDeUsuarios />
+        )}
     </div>
     )
   }

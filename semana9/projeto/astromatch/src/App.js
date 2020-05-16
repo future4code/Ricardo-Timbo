@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import logo from './Imagens/logo-astromatch.png'
+import Inicial from'./Componentes/Inicial/Inicial'
+import DeuMatch from './Componentes/DeuMatch/DeuMatch'
 
 
 function App()  {
@@ -17,6 +20,7 @@ function App()  {
             <div/>
             <logo src={logo}/>
             <a className = 'matches' onClick={alteraCard}></a>
+              {/* mudar para Material icons */}
           </header>
           <Inicial />
         </div>
@@ -26,10 +30,12 @@ function App()  {
             <div/>
             <logo src={logo}/>
             <a className = 'voltar-para-Inicial' onClick={alteraCard}></a>
+              {/* mudar para Material icons */}
           </header>
           <DeuMatch />
         </div>
       }
+      <button>Limpar swipes e matches</button>
     </div>
   );
 }

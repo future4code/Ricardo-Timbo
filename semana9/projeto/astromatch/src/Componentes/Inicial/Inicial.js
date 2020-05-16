@@ -5,17 +5,42 @@ function Inicial()  {
     const [perfil, setPerfil] = useState({})
 
     useEffect(() =>{
-        Axios
+      pegaPerfil()
+      
+      }, 
+        [])
+
+      const pegaPerfil = () => {
+        console.log(perfil)
+
+      Axios
         .get("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/ricardo-timbo/person")
         .then(resposta=>{
-          setPerfil(resposta.data.profile)
-          console.log(resposta.data.profile)
+          return setPerfil(resposta.data.profile)
         })
+        
         .catch(error => {
-          return alert(`Status do erro: ${error.response.status}\nMensagem: ${error.response.data.message}`)
+          return alert(`Erro! não foi possivel carregar o perfil`)
+          })
+        }
+
+      const onClickCurtiu = (event) => {
+        const body = {
+          id: perfil.id,
+          choice: event.currentTarget.value
+        }
+      }
+
+      setPerfil({})
+
+      axios 
+        .post("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/ricardo-timbo/choose-person", body)
+        .then(resposta =>{
+          return pegaPerfil()
         })
-    }, 
-    [setPerfil])
+        .catch(erro =>{
+          return alert()
+        })
     return(
         <div>
             <div>

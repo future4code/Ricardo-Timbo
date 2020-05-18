@@ -1,52 +1,25 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import CardPerfil from './CardPerfil'
+import BotoesEscolha from './BotoesEscolha'
 import Axios from 'axios'
 
-function Inicial()  {
-    const [perfil, setPerfil] = useState({})
+function Inicial() {
 
-    useEffect(() =>{
-      pegaPerfil()
-      
-      }, 
-        [])
+  const [perfil, setPerfil] = useState({})
 
-      const pegaPerfil = () => {
-        console.log(perfil)
 
-      Axios
-        .get("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/ricardo-timbo/person")
-        .then(resposta=>{
-          return setPerfil(resposta.data.profile)
-        })
-        
-        .catch(error => {
-          return alert(`Erro! não foi possivel carregar o perfil`)
-          })
-        }
+  useEffect(() => {
+    Axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/ricardo-timbo/person')
+    .then(response =>{setPerfil(response.data.profile)})
+  }, [])
 
-      const onClickCurtiu = (event) => {
-        const body = {
-          id: perfil.id,
-          choice: event.currentTarget.value
-        }
-      }
+  return(
+    <div>
+      <CardPerfil perfil={perfil}/>
+      <BotoesEscolha/>
+    </div>
+  )
 
-      setPerfil({})
-
-      axios 
-        .post("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/ricardo-timbo/choose-person", body)
-        .then(resposta =>{
-          return pegaPerfil()
-        })
-        .catch(erro =>{
-          return alert()
-        })
-    return(
-        <div>
-            <div>
-
-            </div>
-        </div>
-    )
 }
+
 export default Inicial

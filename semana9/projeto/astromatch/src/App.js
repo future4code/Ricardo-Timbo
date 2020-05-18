@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import logo from './Imagens/logo-astromatch.png'
 import Inicial from'./Componentes/Inicial/Inicial'
 import DeuMatch from './Componentes/DeuMatch/DeuMatch'
-
+import Main from './Componentes/Main/Main';
+import BotaoReset from './Componentes/BotaoReset/BotaoReset';
 
 function App()  {
   const [inicio, setInicio] = useState(true)
@@ -13,29 +14,8 @@ function App()  {
 
   return (
     <div>
-      {inicio 
-        ? 
-        <div>
-          <header>
-            <div/>
-            <logo src={logo}/>
-            <a className = 'matches' onClick={alteraCard}></a>
-              {/* mudar para Material icons */}
-          </header>
-          <Inicial />
-        </div>
-        :
-        <div>
-          <header>
-            <div/>
-            <logo src={logo}/>
-            <a className = 'voltar-para-Inicial' onClick={alteraCard}></a>
-              {/* mudar para Material icons */}
-          </header>
-          <DeuMatch />
-        </div>
-      }
-      <button>Limpar swipes e matches</button>
+      <Main />
+      <BotaoReset />
     </div>
   );
 }

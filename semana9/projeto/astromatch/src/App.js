@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './Imagens/logo-astromatch.png'
 import Inicial from'./Componentes/Inicial/Inicial'
 import DeuMatch from './Componentes/DeuMatch/DeuMatch'
 import Main from './Componentes/Main/Main';

@@ -8,12 +8,12 @@ const AppBarContainer = styled.div`
     align-items: center;
     padding 0 10px;
 `
-function AppBar() {
+function AppBar(props) {
     return(
         <AppBarContainer>
-            <button>Escolher Pagina</button>
+            <button onClick={props.vaiParaInicial}>Escolher Pagina</button>
             <p>astromach</p>
-            <button>Lista</button>
+            <button onClick={props.vaiParaDeuMatch}>Lista</button>
         </AppBarContainer>
     )
 }

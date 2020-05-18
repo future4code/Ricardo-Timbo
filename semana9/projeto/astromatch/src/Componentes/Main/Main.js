@@ -18,18 +18,30 @@ function Main() {
 
     const carregaMain = () => {
         switch(trocaPagina) {
-            case 'Inicial':
+            case 'inicial':
                 return <Inicial/>
-            case 'DeuMatch':
+            case 'deuMatch':
                 return <DeuMatch/>
+            default:
+                return <Inicial/>
         }
+    }
+
+    const vaiParaInicial = () => {
+        setTrocaPagina('inicial')
+    }
+
+    const vaiParaDeuMatch = () => {
+        setTrocaPagina('deuMatch')
     }
 
     return (
         <MainContainer>
-            <AppBar />
-            <Inicial />
-            <DeuMatch/>
+            <AppBar 
+            vaiParaInicial={vaiParaInicial} 
+            vaiParaDeuMatch={vaiParaDeuMatch}
+            />
+            {carregaMain()}
         </MainContainer>
     )
     

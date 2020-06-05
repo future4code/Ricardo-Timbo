@@ -1,9 +1,16 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const LoginPage = () => {
+    const history = useHistory()
+
+    const vaiParaAdmin = () =>{
+        history.replace(`/admin`)
+    }
     return(
         <div>
-            Login
+            
+            <button onClick={vaiParaAdmin}>Entrar</button>
         </div>
     )
 }

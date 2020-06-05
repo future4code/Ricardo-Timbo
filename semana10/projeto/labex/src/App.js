@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePage from './Components/HomePage';
 import LoginPage from './Components/LoginPage';
 import FormPage from './Components/FormPage';
+import AdminPage from './Components/AdminPage';
 
 
 const App = () => {
@@ -18,6 +19,9 @@ const App = () => {
         </Route>
         <Route exact path="/form">
           <FormPage />
+        </Route>
+        <Route exact path="/admin">
+          <AdminPage/>
         </Route>
       </Switch>
     </BrowserRouter>

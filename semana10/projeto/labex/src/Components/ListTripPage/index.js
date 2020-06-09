@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListTripsPage = () => {
+const ListTripPage = () => {
     return(
         <div>
             Lista competa de viagens
@@ -8,4 +8,4 @@ const ListTripsPage = () => {
     )
 }
 
-export default ListTripsPage
+export default ListTripPage

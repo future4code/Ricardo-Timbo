@@ -4,22 +4,19 @@
   "description": "exercicio aula 46",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node build/index.js",
-    "exer1": "tsc && node build/exercicio1.js",
-    "exer2": "tsc && node build/exercicio2.js",
-    "exer3": "tsc && node build/exercicio3.js",
-    "exer4": "tsc && node build/exercicio4.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node build/index.js"
   },
   "keywords": [
-    "npm",
     "node",
-    "packge.json"
+    "npm",
+    "package.json"
   ],
   "author": "Ricardo_Timbo",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^14.0.14",
+    "moment": "^2.27.0",
     "typescript": "^3.9.5"
   }
 }

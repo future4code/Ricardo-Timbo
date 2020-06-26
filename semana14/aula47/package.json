@@ -4,7 +4,7 @@
   "description": "exercicio da aula 47",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./src/index.ts",
+    "start": "tsc && node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ricardo-Timbo",

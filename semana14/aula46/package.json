@@ -1,0 +1,22 @@
+{
+  "name": "aula46",
+  "version": "1.0.0",
+  "description": "exercicio aula 46",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node build/index.js"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "package.json"
+  ],
+  "author": "Ricardo_Timbo",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.14",
+    "moment": "^2.27.0",
+    "typescript": "^3.9.5"
+  }
+}

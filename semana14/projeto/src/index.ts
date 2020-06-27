@@ -19,7 +19,7 @@ type Movimentacao = {
 const criarconta = (nome: string, nascimento: string, cpf: string) => {
     const dataDeNascimento = moment(nascimento, "DD/MM/YYYY")
     const today = moment();
-    const idade = today.diff(dataDeNascimento, "anos")
+    const idade = today.diff(dataDeNascimento, "years")
     if (idade < 18) {
         console.log("Para abir a conta é necessario ter 18 anos ou mais ")
         return;

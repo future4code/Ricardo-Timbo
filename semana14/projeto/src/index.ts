@@ -27,48 +27,27 @@ const criarconta = (nome: string, nascimento: string, cpf: string) => {
     const pFPath = "C:/Users/rcard/Documents/Future4/Ricardo-Timbo/semana14/projeto/pessoaFisica.json"
     const pFData: Buffer = fs.readFileSync(pFPath)
     const pFString: string = pFData.toString()
-    const clientPF: Conta[] = JSON.parse(pFString)
-    const buscarCPF = clientPF.find((cliente: Conta) =>{
+    const clientePF: Conta[] = JSON.parse(pFString)
+    const buscarCPF = clientePF.find((cliente: Conta) =>{
         return cliente.cpf === cpf;
     })
     if (buscarCPF !== undefined) {
         console.log("CPF já cadastrado. Verifique o CPF")
+        return
     }
+    clientePF.push({
+        nome,
+        cpf,
+        dataDeNascimento: nascimento,
+        saldo: 0,
+        extrato: []
+    })
+    const clientePFCampo = JSON.stringify(clientePF, null, 2)
+    fs.writeFileSync(pFPath, clientePFCampo)
 }
+const nome = process.argv[2]
+const cpf = process.argv[3];
+const dataDeNascimento = process.argv[4];
+criarconta(nome, cpf, dataDeNascimento);
 
 
-
-
-
-//----------------------------------------------------------------------------
-
-// const createAccount = (name: string, birthDateString: string, cpf: string) => {
-// 
-
-//   // 2. Parsear o arquivo
-//   const users: Account[] = JSON.parse(usersString);
-//   //2,5. Validar o CPF
-//   const foundUser = users.find((user: Account) => {
-//     return user.cpf === cpf;
-//   });
-//   if (foundUser !== undefined) {
-//     console.log("Já existe um usuário com esse CPF");
-//     return;
-//   }
-//   // 3. Adiciono o ususário no array
-//   users.push({
-//     name: name,
-//     birthDate: birthDateString,
-//     cpf: cpf,
-//     balance: 0,
-//     extract: [],
-//   });
-//   console.log(users);
-//   // 4. Reescrevo o arquivo todo
-//   const usersStringified = JSON.stringify(users, null, 2);
-//   fs.writeFileSync(usersFilePath, usersStringified);
-// };
-// const name = process.argv[2];
-// const date = process.argv[3];
-// const cpf = process.argv[4];
-// createAccount(name, date, cpf);

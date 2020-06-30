@@ -5,12 +5,7 @@ class UserAccount {
     private balance: number = 0;
     private transactions: Transaction[];
   
-    constructor(
-       cpf: string,
-       name: string,
-       age: number,
-    ) {
-       console.log("Chamando o construtor da classe UserAccount")
+    constructor( cpf: string, name: string, age: number,) {
        this.cpf = cpf;
        this.name = name;
        this.age = age;
@@ -26,3 +21,7 @@ class UserAccount {
       }
   
   }
+
+  const myAccount: UserAccount = new UserAccount("124.254.369-45", "Ricardo", 31)
+
+  console.log(myAccount)

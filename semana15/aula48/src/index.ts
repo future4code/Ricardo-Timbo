@@ -1,3 +1,3 @@
 // ------------------------------- 1 -------------------------------------
 
-// os construtor serve para criar novos objetos da mesma clasee
+// os construtor serve para criar novos objetos da mesma

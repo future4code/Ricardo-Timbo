@@ -10,7 +10,7 @@
 //a) não pq o Customer tmb não possui um metodo Getter, ele herda esse atributo do Pai USer que tem esse atributo privado
 
 //4
-//a)
+
 
 import {User} from "./User";
 import {Customer} from "./Customer"
@@ -23,10 +23,10 @@ console.log('UserEmail: ', myUser.getEmail())
 
 const myCustomer: Customer = new Customer ('008', 'angela@email.com', 'Angela', '123angela', '1234 5678 9876 54')
 myCustomer.introduceYourself()
-// console.log('Customer Id: ', myCustomer.getId());
-// console.log('Customer Name: ', myCustomer.getName());
-// console.log('Customer Email: ', myCustomer.getEmail());
-// console.log("Total gasto: ", myCustomer.purchaseTotal);
-// console.log('Customer Credcard: ', myCustomer.getCreditCard());
-// console.log(myCustomer.introduceYourself());
-console.log(myCustomer, myCustomer.introduceYourself());
+console.log('Customer Id: ', myCustomer.getId());
+console.log('Customer Name: ', myCustomer.getName());
+console.log('Customer Email: ', myCustomer.getEmail());
+console.log("Total gasto: ", myCustomer.purchaseTotal);
+console.log('Customer Credcard: ', myCustomer.getCreditCard());
+console.log(myCustomer.introduceYourself());
+

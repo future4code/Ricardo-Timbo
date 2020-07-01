@@ -30,7 +30,7 @@ export class User {
       }
 
       public introduceYourself(): string {
-          return "Olá, bom dia!"
+          return `Olá, sou ${this.name} bom dia!`
       }
   }
 

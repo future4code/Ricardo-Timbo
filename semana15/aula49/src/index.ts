@@ -11,9 +11,19 @@
 
 //4
 
+//5 
+
+//6
+//a)3 vezes uma para user e 2 paras os das classes filhas
+//b)todos menos a senha
+
+//7
+
 
 import {User} from "./User";
-import {Customer} from "./Customer"
+import {Customer} from "./Customer";
+import {Employee} from "./Employee";
+import {Seller} from "./Seller"
 
 const myUser: User = new User ('007', 'ricardo@email.com', 'Ricardo', 'ricardo123' )
 
@@ -30,3 +40,16 @@ console.log("Total gasto: ", myCustomer.purchaseTotal);
 console.log('Customer Credcard: ', myCustomer.getCreditCard());
 console.log(myCustomer.introduceYourself());
 
+const employeeFirst : Employee = new Employee ('001',
+ 'luizcarlos@email.com',
+  'Luiz Carlos',
+   'l1c2m3t4',
+    new Date(1585209600), 4000)
+   employeeFirst.introduceYourself()
+
+console.log(employeeFirst, employeeFirst.introduceYourself())
+console.log('Total do Salario: ', employeeFirst.calculateTotalSalary())
+
+const firstSeller : Seller = new Seller ('002', 'silvio@rmail.com', 'Silvio', 'silvio1010', new Date(1585209600), 3500)
+firstSeller.introduceYourself()
+console.log(firstSeller, firstSeller.introduceYourself())

@@ -1,6 +1,6 @@
 USE julian_ricardo_timbo_db;
 
-### 1
+### ------------------------------- 1 -----------------------------------------------------
 
 CREATE TABLE Actor (
 	id VARCHAR (255) PRIMARY KEY,
@@ -14,13 +14,14 @@ CREATE TABLE Actor (
 ##### not null significa que o valor neste campo não pode ser nulo, Date significa que neste campo deve ser apenas dadtas,
 ##### (6) significa que a string pode ter no maximo 6 elementos
 ##### b) show databases mostrou as databases existentes, o show tables mostrou as tabelas existentes( a que acabei de criar) 
+
 SHOW DATABASES; 
 SHOW TABLES;
 
 ##### c) show Actor da erro de syntax, Describe Actor mostra os detalhes da tabela como os tipos 
 DESCRIBE Actor;
 
-### 2 
+### ------------------------------- 2 ----------------------------------------------------- 
  
 INSERT INTO Actor (id, name, salary, birth_date, gender)
 VALUES(
@@ -114,7 +115,7 @@ VALUES(
   "female"
 );
 
-### 3 
+### ------------------------------- 3 -----------------------------------------------------
 ##### a) 
 SELECT id, name, salary, birth_date, gender  from Actor WHERE gender = "female";
 ##### b)
@@ -128,7 +129,7 @@ SELECT id, name, salary from Actor WHERE salary <= 500000;
 SELECT id, nome from Actor WHERE id = "002";
 SELECT id, name from Actor WHERE id = "002";
 
-### 4
+### ------------------------------- 4 -----------------------------------------------------
 SELECT * FROM Actor
 WHERE (name LIKE "A%" OR name LIKE "J%") AND salary > 300000;
 ##### a) feito um select que retorna todas as colunas da tabela Actor, das linhas que possuam A ou J no inicio que tenham o valor salary
@@ -143,7 +144,7 @@ WHERE (name LIKE "%G%" OR name LIKE "%g%");
 SELECT * FROM Actor
 WHERE (name LIKE "%G%" OR name LIKE "%g%" OR name LIKE "%a%" OR name LIKE "%A%") AND salary BETWEEN 350000 AND 900000;
 
-### 5
+### ------------------------------- 5 -----------------------------------------------------
 
 ##### a) 
 CREATE TABLE Movie (
@@ -157,5 +158,70 @@ uma tabela com as informações pedidas o titulo está unique para que não haja
 texto maior que não caberia no VARCHAR, id como primaria e INT para a nota do filme 
 
 ##### b) 
+
+INSERT INTO Movie (id, title, synopsis, release_date, rating)
+VALUES(
+  "001", 
+  "Se Eu Fosse Você",
+  "Cláudio e Helena são casados há muitos anos e enfrentam a rotina do casamento. Um dia eles são atingidos por um fenômeno inexplicável e trocam de corpos",
+  "2006-01-06", 
+  7
+);
+
+##### c)
+
+INSERT INTO Movie (id, title, synopsis, release_date, rating)
+VALUES(
+  "002",
+  "Doce de mãe",
+  "Dona Picucha, uma animada senhora de 85 anos, sempre causa grandes confusões. A vida dela e dos seus quatro filhos sofre uma reviravolta depois que Zaida, empregada e amiga de Dona Picucha, anuncia que vai se casar e não poderá mais morar com ela",
+  "2012-12-27",
+  10
+);
+
+##### d)
+
+INSERT INTO Movie (id, title, synopsis, release_date, rating)
+VALUES(
+  "003",
+  "Dona Flor e Seus Dois Maridos",
+  "Dona Flor é uma sedutora professora de culinária casada com Vadinho, que só quer saber de farras e jogatina nas boates. A vida de abusos acaba por acarretar sua morte precoce.",
+  "2017-11-02",
+  8
+);
+
+##### e)
+
+INSERT INTO Movie (id, title, synopsis, release_date, rating)
+VALUES(
+  "004",
+  "O Auto da Compadecida",
+  "O filme mostra as aventuras de João Grilo e Chicó, dois nordestinos pobres que vivem de golpes para sobreviver. Eles estão sempre enganando o povo de um pequeno vilarejo no sertão da Paraíba, inclusive o temido cangaceiro Severino de Aracaju, que os persegue pela região. Somente a aparição da Nossa Senhora poderá salvar esta dupla.",
+  "2000-09-10",
+  9
+);
+
+### ------------------------------- 6 -----------------------------------------------------
+##### a)
+SELECT id, title, rating FROM Movie WHERE id ="004";
+##### b)
+SELECT * FROM Movie 
+WHERE title = "Doce de mãe";
+##### c)
+SELECT id, title, synopsis FROM Movie 
+WHERE rating > 7;
+### ------------------------------- 7 -----------------------------------------------------
+##### a)
+SELECT * FROM Movie
+WHERE (title LIKE "%vida%");
+##### b)
+SELECT * FROM Movie
+WHERE title LIKE "%Dona%" OR synopsis LIKE "%Dona%";
+##### c)
+SELECT * FROM Movie
+WHERE release_date < "2020-07-06";
+##### d)
+SELECT * FROM Movie
+WHERE release_date < "2020-07-06" AND (title LIKE "%Dona%" OR synopsis LIKE "%Dona%") AND rating > 7; 
 
 

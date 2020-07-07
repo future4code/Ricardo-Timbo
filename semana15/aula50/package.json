@@ -1,0 +1,22 @@
+{
+  "name": "aula50",
+  "version": "1.0.0",
+  "description": "exercicios da aula 50",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "polimorfismo",
+    "abstrato",
+    "e",
+    "interface"
+  ],
+  "author": "Ricardo_Timbo",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  }
+}

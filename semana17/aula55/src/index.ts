@@ -1,7 +1,10 @@
 import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
-import { v4 } from "uuid";
+import { IdGenerator } from "./services/IdGenerator";
+import { UserDatabase } from "./data/UserDataBase";
+
+
 
 dotenv.config();
 
@@ -9,9 +12,13 @@ const app = express();
 
 app.use(express.json());
 
-const id=v4();
+const idGenerator = new IdGenerator();
 
-console.log("Generate ID : ", id )
+const generatedId= idGenerator.generate();
+
+const useDb = new UserDatabase();
+useDb.createUser("001", "ricardo@email.com", "ricardo098");
+
 
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {
@@ -21,5 +28,4 @@ const server = app.listen(process.env.PORT || 3003, () => {
     console.error(`Failure upon starting server.`);
   }
 });
-
 

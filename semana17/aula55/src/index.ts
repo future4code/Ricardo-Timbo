@@ -19,6 +19,14 @@ const generatedId= idGenerator.generate();
 const useDb = new UserDatabase();
 useDb.createUser("001", "ricardo@email.com", "ricardo098");
 
+app.post("/singup", async (req: Request, res: Response)=>{
+  try{
+
+  }catch (err){
+
+  }
+})
+
 
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {

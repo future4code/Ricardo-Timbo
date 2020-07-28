@@ -1,0 +1,23 @@
+{
+  "name": "labank",
+  "version": "1.0.0",
+  "description": "Sistema bancario",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "package.json"
+  ],
+  "author": "Ricardo_Timbo",
+  "license": "ISC",
+  "dependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/node": "^14.0.14",
+    "moment": "^2.27.0",
+    "typescript": "^3.9.5"
+  }
+}
